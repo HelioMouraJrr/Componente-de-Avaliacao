@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="content">
+        <div class="main" id="main-div">
+            <div class="star">
+                    <img src="images/icon-star.svg" alt="estrela">
+            </div>
+
+              <div class="texto">
+                  <h1>Como nos saimos?</h1>
+                   <p>Por favor nos informe como nos saímos com sua Requisição de Ajuda. Toda avaliação é apreciada para nos ajudar a melhorar nosso oferecimento.</p>
+            </div>
+
+            <div class="numeros">
+                <ul>
+                    <li><button class="num" onclick="selecionarValue(1)">1</button></li>
+                    <li><button class="num" onclick="selecionarValue(2)">2</button></li>
+                    <li><button class="num" onclick="selecionarValue(3)">3</button></li>
+                    <li><button class="num" onclick="selecionarValue(4)">4</button></li>
+                    <li><button class="num" onclick="selecionarValue(5)">5</button></li>
+                </ul>
+            </div>
+                <button class="submit" onclick="submit()">ENVIAR</button>
+     </div>
+
+         <div class="second-screen">
+
+              <div class="img-obgd">
+                  <img src="images/illustration-thank-you.svg" alt="obrigado" class="thanks">
+               </div>
+
+            <div class="resultado">
+                <div class="texto1">
+                    <p>Você selecionou <span class="resultnum">1</span> de 5</p>
+                  </div>
+
+                   <h1>Obrigado!</h1>
+
+                <div class="texto2">
+                       <p> Nós apreciamos seu tempo para nos avaliar.
+                        Se você precisar de mais suporte, não hesite em
+                        nos contatar.
+                        </p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); /*Overpass */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', serif;
+}
+
+:root {
+    --cor0: rgb(37, 45, 55);
+    --cor1: rgb(18, 20, 23);
+    --cor2: rgb(149, 158, 172);
+    --cor3: hsl(216, 12%, 54%);
+    --cor4: hsl(25, 97%, 53%);
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+.content {
+    background-image: linear-gradient(to bottom, rgb(31, 38, 46), rgb(19, 23, 29));
+    border-radius: 15px;
+    margin: 25% 5%;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    background-color: var(--cor0);
+    border-radius: 50%;
+    width: 40px;
+	height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star img {
+    width: 13.96px;
+}
+
+.texto h1 {
+    font-size: 1.5em;
+    padding-top: 15px;
+    color: white;
+}
+
+.texto p {
+    font-size: 0.9em;
+    padding-top: 10px;
+    color: var(--cor2);
+}
+
+ul {
+    display: flex;
+    gap: 5px;
+}
+
+li {
+    list-style: none;
+    margin: auto;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    background-color: hsl(212, 21%, 14%);
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 50%;
+    color: var(--cor3);
+    margin: 32px 0px;
+    font-size: 0.8em;
+    border: none;
+    font-weight: 700px;
+}
+
+.num:hover {
+    background-color: var(--cor4);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.num--active {
+    background-color: gray;
+    color: white;
+}
+
+.submit {
+    border: none;
+    background-color: var(--cor4);
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+    height: 45px;
+    border-radius: 22.5px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: white;
+    color: var(--cor4);
+    transition-duration: 0.5s;
+}
+
+/* SEGUNDA PÁGINA */
+
+.second-screen {
+    display: none;
+}
+
+.img-obgd {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-obgd img {
+    width: 144px;
+}
+
+.resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.resultado h1 {
+    font-size: 1.7em;
+    margin: 25px 0px 10px;
+    color: white;
+}
+.texto1 p {
+    background-color: rgb(29, 36, 44);
+    border-radius: 22.5px;
+    height: 32px;
+    width: 168px;
+    margin: auto;
+    line-height: 32px;
+    color: var(--cor4);
+    font-size: 14px;
+}
+
+.texto2 p {
+    color: var(--cor2);
+}
+
+
+@media screen and (min-width: 600px) {
+    .content {
+        max-width: 412px;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10% auto;
+    }
+
+    .num {
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+    }
+
+    .star {
+        width: 48px;
+        height: 48px;
+    }
+
+    .star img {
+        width: 20px;
+    }
+
+    .texto1 p {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .img-obgd img {
+        width: 170px;
+    }
+}
