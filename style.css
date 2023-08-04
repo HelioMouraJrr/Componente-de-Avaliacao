@@ -95,6 +95,10 @@ button {
     transition-duration: 0.5s;
 }
 
+.num:focus {
+    outline: none;
+}
+
 .num--active {
     background-color: gray;
     color: white;
